@@ -67,7 +67,7 @@ Edit terraform.tfvars:
 
 terraform apply
 
-kubectl -n rearc exec -it deploy/rearc-quest -- printenv SECRET_WORD
+kubectl -n rearc exec -it deploy/rearc-quest -- printenv SECRET_WORD 
 kubectl -n rearc rollout restart deploy/rearc-quest
 kubectl -n rearc rollout status deploy/rearc-quest
 kubectl -n rearc get pods
