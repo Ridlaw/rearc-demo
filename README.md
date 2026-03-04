@@ -1,10 +1,44 @@
 # Rearc Quest on EKS (Managed Node Groups)
 
+
+
+
 ## Prereqs
 - aws cli configured
 - terraform >= 1.5
 - docker
 - helm (optional; terraform installs the chart)
+
+## Repository Structure
+```
+.
+├── app
+│   ├── bin
+│   │   ├── 001
+│   │   ├── 002
+│   │   ├── 003
+│   │   ├── 004
+│   │   ├── 005
+│   │   └── 006
+│   ├── Dockerfile
+│   ├── package.json
+│   └── src
+│       └── 000.js
+├── certs
+│   ├── cert.pem
+│   └── key.pem
+├── infra
+│   ├── app-k8s.tf
+│   ├── eks-access.tf
+│   ├── main.tf
+│   ├── outputs.tf
+│   ├── terraform.tfvars
+│   ├── variables.tf
+│   └── versions.tf
+└── README.md
+```
+
+---
 
 ## 1) Build & push image to ECR
 1. Create ECR repo: rearc-quest
