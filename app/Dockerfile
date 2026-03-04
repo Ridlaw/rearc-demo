@@ -16,6 +16,7 @@ RUN chmod +x ./bin/*
 EXPOSE 3000
 ENV PORT=3000
 
+<<<<<<< HEAD
 CMD ["npm", "start"]
 
 
@@ -35,3 +36,6 @@ CMD ["npm", "start"]
 # EXPOSE 3000
 # ENV PORT=3000
 # CMD ["npm", "start"]
+=======
+CMD ["npm", "start"]
+>>>>>>> ccef9d7 (update)
