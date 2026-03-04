@@ -5,7 +5,7 @@
 
 ## Prereqs
 - aws cli configured
-- terraform >= 1.5
+- terraform
 - docker
 - helm (optional; terraform installs the chart)
 
