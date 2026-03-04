@@ -1,6 +1,6 @@
-#
+# ------------
 # App namespace
-#
+# -------------
 resource "kubernetes_namespace_v1" "app" {
   metadata {
     name = "rearc"
@@ -88,9 +88,9 @@ resource "kubernetes_deployment_v1" "app" {
   depends_on = [helm_release.aws_load_balancer_controller]
 }
 
-#
+# ---------
 # Service
-#
+# -----------
 resource "kubernetes_service_v1" "app" {
   metadata {
     name      = "rearc-quest"

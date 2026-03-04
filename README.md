@@ -12,7 +12,7 @@
 - aws ecr get-login-password | docker login --username AWS --password-stdin 971677725738.dkr.ecr.us-east-2.amazonaws.com
 
 2. docker build + push:
-   - docker build -t rearc-quest:latest ../app
+   - docker build -t rearc-quest:latest ./app
    - docker tag rearc-quest:latest 971677725738.dkr.ecr.us-east-2.amazonaws.com/rearc-quest:latest
    - docker push 971677725738.dkr.ecr.us-east-2.amazonaws.com/rearc-quest:latest
 
