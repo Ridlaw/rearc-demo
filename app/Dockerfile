@@ -15,27 +15,3 @@ RUN chmod +x ./bin/*
 
 EXPOSE 3000
 ENV PORT=3000
-
-<<<<<<< HEAD
-CMD ["npm", "start"]
-
-
-
-
-# FROM node:20-alpine
-
-# WORKDIR /app
-
-# COPY package.json package-lock.json* ./
-# RUN npm install --omit=dev
-
-# COPY src ./src
-# COPY bin ./bin
-
-
-# EXPOSE 3000
-# ENV PORT=3000
-# CMD ["npm", "start"]
-=======
-CMD ["npm", "start"]
->>>>>>> ccef9d7 (update)
